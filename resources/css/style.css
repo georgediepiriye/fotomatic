@@ -7,6 +7,7 @@ html {
 body{
   margin: 0;
   box-sizing: border-box;
+  
 }
 
 
@@ -17,6 +18,7 @@ body{
 
 .center {
   text-align: center;
+  
 }
 
 .button {
@@ -31,6 +33,7 @@ body{
 
 .image-container img {
   display: block;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -136,11 +139,13 @@ header .mobile {
 #sign-up-section {
   background-image: url('../images/banner-landingpage.jpg');
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   height: 43.5rem;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
 }
 
 #sign-up-cta {
@@ -148,8 +153,9 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
-  margin-left: 100px;
-  margin-top: 170px;
+  top: 171px;
+  left: 10%;
+  position: relative;
 }
 
 #sign-up-cta .content {
@@ -237,13 +243,13 @@ header .mobile {
 
 #features-section {
   display: flex;
-  justify-content: space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
+
 }
 
 .feature {
-  flex: 1;
+
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
@@ -254,6 +260,8 @@ header .mobile {
   height: 65%;
   margin: 0 auto;
 }
+
+
 
 .feature h2 {
   padding-bottom: .5rem;
@@ -322,6 +330,7 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: flex;
 }
 
 @media only screen and (max-width: 760px) {
@@ -347,6 +356,8 @@ header .mobile {
 
   #filters-section .images-container {
     padding: 0;
+    
+   
   }
 
   #filters-section .extra {
@@ -362,15 +373,22 @@ header .mobile {
 
 #quotes-section content {
   padding: 5rem 0;
+ 
+}
+#quotes-section .center {
+
+  padding: 80px;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
+  padding: 80px 30px;
+  
 }
 
 #quotes-section quote-citation {
